@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+
+.header{
+    background: #F5F5F6;
+    padding: 15px 0;
+}
+
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_content_menu{
+    display: flex;
+    column-gap: 20px;
+}
+
+.header_content_menu_item_link{
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    color: #959BA4;
+}
+.header_content_menu_item_link.active{
+    font-weight: bold;
+    color: #000000;
+}
+
+.loginBtn{
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    color: #000000;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+
+.valyuta{
+    padding-top: 56px;
+}
+.valyuta_body{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.valyuta_header_head{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-bottom: 33px;
+}
+.valyuta_content{
+    display: flex;
+    column-gap: 50px;
+}
+.valyuta_content_item{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.valyuta_content_item_title{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9F9F9F;
+    margin-bottom: 10px;
+}
+
+
+.valyuta_content_item_valyutas{
+    display: flex;
+    width: max-content;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.customRadio {
+    position: relative;
+}
+.customRadio_input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.customRadio_label {
+    border-right: 1px solid #E5E5E5;
+    padding: 10px 14px;
+    font-size: 12px;
+    line-height: 15px;
+    cursor: pointer;
+    display: inline-block;
+}
+.customRadio:last-child .customRadio_label{
+    border-right: unset;
+} 
+
+.customRadio_input:checked ~ .customRadio_label {
+    background: #833AE0;
+    color: #fff;
+}
+
+
+
+
+.valyuta_content_item_value{
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+.valyuta_content_item_value_number{
+    margin-bottom: 20px;
+}
+.valyuta_content_item_value_number--input{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.valyuta_content_item_value_info{
+    font-size: 12px;
+    line-height: 14px;
+    color: #C6C6C6;
+}
